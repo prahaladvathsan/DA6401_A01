@@ -1,0 +1,16 @@
+{"time":"2025-03-17T22:56:49.6266036+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\praha\\Documents\\IIT madras\\Acads\\sem 10\\introtoDL\\DA6401_A01\\wandb\\run-20250317_225649-16llodcg\\logs\\debug-core.log"}
+{"time":"2025-03-17T22:56:49.7411686+05:30","level":"INFO","msg":"created new stream","id":"16llodcg"}
+{"time":"2025-03-17T22:56:49.7411686+05:30","level":"INFO","msg":"stream: started","id":"16llodcg"}
+{"time":"2025-03-17T22:56:49.7411686+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"16llodcg"}
+{"time":"2025-03-17T22:56:49.7411686+05:30","level":"INFO","msg":"handler: started","stream_id":"16llodcg"}
+{"time":"2025-03-17T22:56:49.7411686+05:30","level":"INFO","msg":"sender: started","stream_id":"16llodcg"}
+{"time":"2025-03-17T22:57:10.7682332+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp 35.186.228.49:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-17T22:57:34.1486493+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp 35.186.228.49:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-17T22:57:59.5105083+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp 35.186.228.49:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-17T22:58:23.4109619+05:30","level":"INFO","msg":"stream: closing","id":"16llodcg"}
+{"time":"2025-03-17T22:58:23.4109619+05:30","level":"INFO","msg":"handler: closed","stream_id":"16llodcg"}
+{"time":"2025-03-17T22:58:23.4109619+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"16llodcg"}
+{"time":"2025-03-17T22:58:23.4109619+05:30","level":"ERROR","msg":"sender: upsertRun:","error":"failed to upsert bucket: api: failed sending: POST https://api.wandb.ai/graphql giving up after 4 attempt(s): context canceled"}
+{"time":"2025-03-17T22:58:23.4109619+05:30","level":"INFO","msg":"sender: closed","stream_id":"16llodcg"}
+{"time":"2025-03-17T22:58:23.4109619+05:30","level":"WARN","msg":"runwork: ignoring record after close","work":{}}
+{"time":"2025-03-17T22:58:23.4115474+05:30","level":"INFO","msg":"stream: closed","id":"16llodcg"}

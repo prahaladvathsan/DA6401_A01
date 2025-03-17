@@ -1,0 +1,19 @@
+{"time":"2025-03-17T22:37:43.5199319+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\praha\\Documents\\IIT madras\\Acads\\sem 10\\introtoDL\\DA6401_A01\\wandb\\run-20250317_223743-otzgv0is\\logs\\debug-core.log"}
+{"time":"2025-03-17T22:37:43.6362446+05:30","level":"INFO","msg":"created new stream","id":"otzgv0is"}
+{"time":"2025-03-17T22:37:43.6362446+05:30","level":"INFO","msg":"stream: started","id":"otzgv0is"}
+{"time":"2025-03-17T22:37:43.6362446+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"otzgv0is"}
+{"time":"2025-03-17T22:37:43.6367506+05:30","level":"INFO","msg":"handler: started","stream_id":"otzgv0is"}
+{"time":"2025-03-17T22:37:43.6367506+05:30","level":"INFO","msg":"sender: started","stream_id":"otzgv0is"}
+{"time":"2025-03-17T22:37:44.0946278+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T22:38:05.8832897+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/prahaladvathsan-iit-madras/DA640_A01/otzgv0is/file_stream\": dial tcp 35.186.228.49:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-17T22:38:12.8175514+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T22:38:12.8180556+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T22:38:13.8366259+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 0-7, summary","runtime_seconds":5.5517812},{"desc":"uploading config.yaml","runtime_seconds":0.0557514,"progress":"1003B/1003B"}],"total_operations":2}}
+{"time":"2025-03-17T22:38:14.1510964+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T22:38:29.3168925+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/prahaladvathsan-iit-madras/DA640_A01/otzgv0is/file_stream\": dial tcp 35.186.228.49:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-17T22:38:53.0166983+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/prahaladvathsan-iit-madras/DA640_A01/otzgv0is/file_stream\": dial tcp 35.186.228.49:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-17T22:38:55.5726001+05:30","level":"INFO","msg":"stream: closing","id":"otzgv0is"}
+{"time":"2025-03-17T22:38:55.5726001+05:30","level":"INFO","msg":"handler: closed","stream_id":"otzgv0is"}
+{"time":"2025-03-17T22:38:55.5726001+05:30","level":"INFO","msg":"sender: closed","stream_id":"otzgv0is"}
+{"time":"2025-03-17T22:38:55.5726001+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"otzgv0is"}
+{"time":"2025-03-17T22:38:55.5731094+05:30","level":"INFO","msg":"stream: closed","id":"otzgv0is"}

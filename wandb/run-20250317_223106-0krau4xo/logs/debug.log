@@ -1,0 +1,286 @@
+2025-03-17 22:31:06,698 INFO    Thread-21 (_run_job):19288 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-03-17 22:31:06,698 INFO    Thread-21 (_run_job):19288 [wandb_setup.py:_flush():67] Configure stats pid to 19288
+2025-03-17 22:31:06,698 INFO    Thread-21 (_run_job):19288 [wandb_setup.py:_flush():67] Loading settings from C:\Users\praha\.config\wandb\settings
+2025-03-17 22:31:06,698 INFO    Thread-21 (_run_job):19288 [wandb_setup.py:_flush():67] Loading settings from C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\wandb\settings
+2025-03-17 22:31:06,698 INFO    Thread-21 (_run_job):19288 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-17 22:31:06,698 INFO    Thread-21 (_run_job):19288 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\wandb\run-20250317_223106-0krau4xo\logs\debug.log
+2025-03-17 22:31:06,701 INFO    Thread-21 (_run_job):19288 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\wandb\run-20250317_223106-0krau4xo\logs\debug-internal.log
+2025-03-17 22:31:06,701 INFO    Thread-21 (_run_job):19288 [wandb_init.py:init():761] calling init triggers
+2025-03-17 22:31:06,701 INFO    Thread-21 (_run_job):19288 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activation': 'tanh', 'batch_size': 32, 'beta': 0.9, 'beta1': 0.9, 'beta2': 0.999, 'epochs': 5, 'epsilon': 1e-08, 'hidden_size': 32, 'learning_rate': 0.0001, 'loss': 'cross_entropy', 'momentum': 0.9, 'num_layers': 3, 'optimizer': 'nadam', 'weight_decay': 0.0005, 'weight_init': 'random'}
+config: {'_wandb': {}}
+2025-03-17 22:31:06,701 INFO    Thread-21 (_run_job):19288 [wandb_init.py:init():784] starting backend
+2025-03-17 22:31:06,701 INFO    Thread-21 (_run_job):19288 [wandb_init.py:init():788] sending inform_init request
+2025-03-17 22:31:06,712 INFO    Thread-21 (_run_job):19288 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-03-17 22:31:06,712 INFO    Thread-21 (_run_job):19288 [wandb_init.py:init():798] backend started and connected
+2025-03-17 22:31:06,714 INFO    Thread-21 (_run_job):19288 [wandb_run.py:_config_callback():1261] config_cb None None {'activation': 'tanh', 'batch_size': 32, 'beta': 0.9, 'beta1': 0.9, 'beta2': 0.999, 'epochs': 5, 'epsilon': 1e-08, 'hidden_size': 32, 'learning_rate': 0.0001, 'loss': 'cross_entropy', 'momentum': 0.9, 'num_layers': 3, 'optimizer': 'nadam', 'weight_decay': 0.0005, 'weight_init': 'random'}
+2025-03-17 22:31:06,715 INFO    Thread-21 (_run_job):19288 [wandb_init.py:init():891] updated telemetry
+2025-03-17 22:31:06,780 INFO    Thread-21 (_run_job):19288 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-17 22:32:36,804 ERROR   Thread-21 (_run_job):19288 [wandb_init.py:init():1478] error in wandb.init()
+Traceback (most recent call last):
+  File "c:\Users\praha\miniconda3\envs\DS\lib\asyncio\locks.py", line 214, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\praha\miniconda3\envs\DS\lib\asyncio\tasks.py", line 456, in wait_for
+    return fut.result()
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\mailbox\response_handle.py", line 109, in wait_async
+    await asyncio.wait_for(evt.wait(), timeout=timeout)
+  File "c:\Users\praha\miniconda3\envs\DS\lib\asyncio\tasks.py", line 458, in wait_for
+    raise exceptions.TimeoutError() from exc
+asyncio.exceptions.TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\wandb_init.py", line 941, in init
+    result = wait_with_progress(
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\mailbox\wait_with_progress.py", line 24, in wait_with_progress
+    return wait_all_with_progress(
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\mailbox\wait_with_progress.py", line 87, in wait_all_with_progress
+    return asyncio_compat.run(progress_loop_with_timeout)
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\lib\asyncio_compat.py", line 30, in run
+    return future.result()
+  File "c:\Users\praha\miniconda3\envs\DS\lib\concurrent\futures\_base.py", line 458, in result
+    return self.__get_result()
+  File "c:\Users\praha\miniconda3\envs\DS\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "c:\Users\praha\miniconda3\envs\DS\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\lib\asyncio_compat.py", line 74, in run
+    return asyncio.run(self._run_or_cancel(fn))
+  File "c:\Users\praha\miniconda3\envs\DS\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "c:\Users\praha\miniconda3\envs\DS\lib\asyncio\base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\lib\asyncio_compat.py", line 98, in _run_or_cancel
+    return fn_task.result()
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\mailbox\wait_with_progress.py", line 82, in progress_loop_with_timeout
+    return await _wait_handles_async(
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\mailbox\wait_with_progress.py", line 130, in _wait_handles_async
+    async with asyncio_compat.open_task_group() as task_group:
+  File "c:\Users\praha\miniconda3\envs\DS\lib\contextlib.py", line 206, in __aexit__
+    await anext(self.gen)
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\lib\asyncio_compat.py", line 190, in open_task_group
+    await task_group._wait_all()
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\lib\asyncio_compat.py", line 159, in _wait_all
+    raise exc
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\mailbox\wait_with_progress.py", line 128, in wait_single
+    results[index] = await handle.wait_async(timeout=timeout)
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\mailbox\mailbox_handle.py", line 126, in wait_async
+    response = await self._handle.wait_async(timeout=timeout)
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\mailbox\response_handle.py", line 118, in wait_async
+    raise TimeoutError(
+TimeoutError: Timed out waiting for response on 0gsrt1tgp2rt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\wandb_init.py", line 1468, in init
+    return wi.init(run_settings, run_config)
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\wandb_init.py", line 954, in init
+    raise CommError(
+wandb.errors.errors.CommError: Run initialization has timed out after 90.0 sec. Please try increasing the timeout with the `init_timeout` setting: `wandb.init(settings=wandb.Settings(init_timeout=120))`.
+2025-03-17 22:32:36,875 ERROR   MainThread:19288 [pyagent.py:_run_jobs_from_queue():234] Run 0krau4xo errored:
+Traceback (most recent call last):
+  File "c:\Users\praha\miniconda3\envs\DS\lib\asyncio\locks.py", line 214, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\praha\miniconda3\envs\DS\lib\asyncio\tasks.py", line 456, in wait_for
+    return fut.result()
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\mailbox\response_handle.py", line 109, in wait_async
+    await asyncio.wait_for(evt.wait(), timeout=timeout)
+  File "c:\Users\praha\miniconda3\envs\DS\lib\asyncio\tasks.py", line 458, in wait_for
+    raise exceptions.TimeoutError() from exc
+asyncio.exceptions.TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\wandb_init.py", line 941, in init
+    result = wait_with_progress(
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\mailbox\wait_with_progress.py", line 24, in wait_with_progress
+    return wait_all_with_progress(
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\mailbox\wait_with_progress.py", line 87, in wait_all_with_progress
+    return asyncio_compat.run(progress_loop_with_timeout)
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\lib\asyncio_compat.py", line 30, in run
+    return future.result()
+  File "c:\Users\praha\miniconda3\envs\DS\lib\concurrent\futures\_base.py", line 458, in result
+    return self.__get_result()
+  File "c:\Users\praha\miniconda3\envs\DS\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "c:\Users\praha\miniconda3\envs\DS\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\lib\asyncio_compat.py", line 74, in run
+    return asyncio.run(self._run_or_cancel(fn))
+  File "c:\Users\praha\miniconda3\envs\DS\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "c:\Users\praha\miniconda3\envs\DS\lib\asyncio\base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\lib\asyncio_compat.py", line 98, in _run_or_cancel
+    return fn_task.result()
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\mailbox\wait_with_progress.py", line 82, in progress_loop_with_timeout
+    return await _wait_handles_async(
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\mailbox\wait_with_progress.py", line 130, in _wait_handles_async
+    async with asyncio_compat.open_task_group() as task_group:
+  File "c:\Users\praha\miniconda3\envs\DS\lib\contextlib.py", line 206, in __aexit__
+    await anext(self.gen)
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\lib\asyncio_compat.py", line 190, in open_task_group
+    await task_group._wait_all()
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\lib\asyncio_compat.py", line 159, in _wait_all
+    raise exc
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\mailbox\wait_with_progress.py", line 128, in wait_single
+    results[index] = await handle.wait_async(timeout=timeout)
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\mailbox\mailbox_handle.py", line 126, in wait_async
+    response = await self._handle.wait_async(timeout=timeout)
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\mailbox\response_handle.py", line 118, in wait_async
+    raise TimeoutError(
+TimeoutError: Timed out waiting for response on 0gsrt1tgp2rt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\agents\pyagent.py", line 306, in _run_job
+    self._function()
+  File "C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\Sweep.py", line 16, in train_model_for_sweep
+    with wandb.init() as run:
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\wandb_init.py", line 1482, in init
+    wandb._sentry.reraise(e)
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\analytics\sentry.py", line 156, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\wandb_init.py", line 1468, in init
+    return wi.init(run_settings, run_config)
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\sdk\wandb_init.py", line 954, in init
+    raise CommError(
+wandb.errors.errors.CommError: Run initialization has timed out after 90.0 sec. Please try increasing the timeout with the `init_timeout` setting: `wandb.init(settings=wandb.Settings(init_timeout=120))`.
+
+2025-03-17 22:32:39,826 INFO    MsgRouterThr:19288 [mailbox.py:close():129] Closing mailbox, abandoning 1 handles.
+2025-03-17 22:32:41,301 INFO    Thread-26 (_run_job):19288 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-03-17 22:32:41,301 INFO    Thread-26 (_run_job):19288 [wandb_setup.py:_flush():67] Configure stats pid to 19288
+2025-03-17 22:32:41,301 INFO    Thread-26 (_run_job):19288 [wandb_setup.py:_flush():67] Loading settings from C:\Users\praha\.config\wandb\settings
+2025-03-17 22:32:41,301 INFO    Thread-26 (_run_job):19288 [wandb_setup.py:_flush():67] Loading settings from C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\wandb\settings
+2025-03-17 22:32:41,301 INFO    Thread-26 (_run_job):19288 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-17 22:32:41,301 INFO    Thread-26 (_run_job):19288 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\wandb\run-20250317_223241-nn7ar6e6\logs\debug.log
+2025-03-17 22:32:41,301 INFO    Thread-26 (_run_job):19288 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\wandb\run-20250317_223241-nn7ar6e6\logs\debug-internal.log
+2025-03-17 22:32:41,301 INFO    Thread-26 (_run_job):19288 [wandb_init.py:init():761] calling init triggers
+2025-03-17 22:32:41,301 INFO    Thread-26 (_run_job):19288 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activation': 'ReLU', 'batch_size': 16, 'beta': 0.9, 'beta1': 0.9, 'beta2': 0.999, 'epochs': 10, 'epsilon': 1e-08, 'hidden_size': 128, 'learning_rate': 0.0001, 'loss': 'cross_entropy', 'momentum': 0.9, 'num_layers': 4, 'optimizer': 'momentum', 'weight_decay': 0.0005, 'weight_init': 'random'}
+config: {'_wandb': {}}
+2025-03-17 22:32:41,301 INFO    Thread-26 (_run_job):19288 [wandb_init.py:init():784] starting backend
+2025-03-17 22:32:41,301 INFO    Thread-26 (_run_job):19288 [wandb_init.py:init():788] sending inform_init request
+2025-03-17 22:32:41,318 INFO    Thread-26 (_run_job):19288 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-03-17 22:32:41,318 INFO    Thread-26 (_run_job):19288 [wandb_init.py:init():798] backend started and connected
+2025-03-17 22:32:41,319 INFO    Thread-26 (_run_job):19288 [wandb_run.py:_config_callback():1261] config_cb None None {'activation': 'ReLU', 'batch_size': 16, 'beta': 0.9, 'beta1': 0.9, 'beta2': 0.999, 'epochs': 10, 'epsilon': 1e-08, 'hidden_size': 128, 'learning_rate': 0.0001, 'loss': 'cross_entropy', 'momentum': 0.9, 'num_layers': 4, 'optimizer': 'momentum', 'weight_decay': 0.0005, 'weight_init': 'random'}
+2025-03-17 22:32:41,320 INFO    Thread-26 (_run_job):19288 [wandb_init.py:init():891] updated telemetry
+2025-03-17 22:32:41,376 INFO    Thread-26 (_run_job):19288 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-17 22:32:41,817 INFO    Thread-26 (_run_job):19288 [wandb_init.py:init():990] starting run threads in backend
+2025-03-17 22:32:42,459 INFO    Thread-26 (_run_job):19288 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-17 22:32:42,461 INFO    Thread-26 (_run_job):19288 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-17 22:32:42,462 INFO    Thread-26 (_run_job):19288 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-17 22:32:42,462 INFO    Thread-26 (_run_job):19288 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-17 22:32:42,464 INFO    Thread-26 (_run_job):19288 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-17 22:32:42,931 INFO    Thread-26 (_run_job):19288 [wandb_run.py:_finish():2112] finishing run prahaladvathsan-iit-madras/DA640_A01/nn7ar6e6
+2025-03-17 22:32:42,932 INFO    Thread-26 (_run_job):19288 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-03-17 22:32:42,932 INFO    Thread-26 (_run_job):19288 [wandb_run.py:_restore():2322] restore
+2025-03-17 22:32:42,933 INFO    Thread-26 (_run_job):19288 [wandb_run.py:_restore():2328] restore done
+2025-03-17 22:33:08,051 INFO    Thread-26 (_run_job):19288 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-17 22:33:08,051 INFO    Thread-26 (_run_job):19288 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-17 22:33:08,051 INFO    Thread-26 (_run_job):19288 [wandb_run.py:_footer_sync_info():3917] logging synced files
+2025-03-17 22:33:08,055 ERROR   MainThread:19288 [pyagent.py:_run_jobs_from_queue():234] Run nn7ar6e6 errored:
+Traceback (most recent call last):
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\agents\pyagent.py", line 306, in _run_job
+    self._function()
+  File "C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\Sweep.py", line 79, in train_model_for_sweep
+    model.update_weights(dw, db, optimizer)
+  File "C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\Neural_Network.py", line 278, in update_weights
+    self.weights[i] = optimizer.update(self.weights[i], dw[i])
+  File "C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\Neural_Network.py", line 90, in update
+    self.velocity = self.momentum * self.velocity - self.learning_rate * gradients
+ValueError: operands could not be broadcast together with shapes (784,128) (128,128) 
+
+2025-03-17 22:33:13,071 INFO    MsgRouterThr:19288 [mailbox.py:close():129] Closing mailbox, abandoning 1 handles.
+2025-03-17 22:33:23,457 INFO    Thread-31 (_run_job):19288 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-03-17 22:33:23,457 INFO    Thread-31 (_run_job):19288 [wandb_setup.py:_flush():67] Configure stats pid to 19288
+2025-03-17 22:33:23,457 INFO    Thread-31 (_run_job):19288 [wandb_setup.py:_flush():67] Loading settings from C:\Users\praha\.config\wandb\settings
+2025-03-17 22:33:23,457 INFO    Thread-31 (_run_job):19288 [wandb_setup.py:_flush():67] Loading settings from C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\wandb\settings
+2025-03-17 22:33:23,457 INFO    Thread-31 (_run_job):19288 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-17 22:33:23,458 INFO    Thread-31 (_run_job):19288 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\wandb\run-20250317_223323-ml9142ar\logs\debug.log
+2025-03-17 22:33:23,459 INFO    Thread-31 (_run_job):19288 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\wandb\run-20250317_223323-ml9142ar\logs\debug-internal.log
+2025-03-17 22:33:23,459 INFO    Thread-31 (_run_job):19288 [wandb_init.py:init():761] calling init triggers
+2025-03-17 22:33:23,459 INFO    Thread-31 (_run_job):19288 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activation': 'sigmoid', 'batch_size': 64, 'beta': 0.9, 'beta1': 0.9, 'beta2': 0.999, 'epochs': 10, 'epsilon': 1e-08, 'hidden_size': 32, 'learning_rate': 0.0001, 'loss': 'cross_entropy', 'momentum': 0.9, 'num_layers': 3, 'optimizer': 'adam', 'weight_decay': 0.5, 'weight_init': 'random'}
+config: {'_wandb': {}}
+2025-03-17 22:33:23,459 INFO    Thread-31 (_run_job):19288 [wandb_init.py:init():784] starting backend
+2025-03-17 22:33:23,459 INFO    Thread-31 (_run_job):19288 [wandb_init.py:init():788] sending inform_init request
+2025-03-17 22:33:23,472 INFO    Thread-31 (_run_job):19288 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-03-17 22:33:23,472 INFO    Thread-31 (_run_job):19288 [wandb_init.py:init():798] backend started and connected
+2025-03-17 22:33:23,474 INFO    Thread-31 (_run_job):19288 [wandb_run.py:_config_callback():1261] config_cb None None {'activation': 'sigmoid', 'batch_size': 64, 'beta': 0.9, 'beta1': 0.9, 'beta2': 0.999, 'epochs': 10, 'epsilon': 1e-08, 'hidden_size': 32, 'learning_rate': 0.0001, 'loss': 'cross_entropy', 'momentum': 0.9, 'num_layers': 3, 'optimizer': 'adam', 'weight_decay': 0.5, 'weight_init': 'random'}
+2025-03-17 22:33:23,476 INFO    Thread-31 (_run_job):19288 [wandb_init.py:init():891] updated telemetry
+2025-03-17 22:33:23,546 INFO    Thread-31 (_run_job):19288 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-17 22:33:24,087 INFO    Thread-31 (_run_job):19288 [wandb_init.py:init():990] starting run threads in backend
+2025-03-17 22:33:25,010 INFO    Thread-31 (_run_job):19288 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-17 22:33:25,013 INFO    Thread-31 (_run_job):19288 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-17 22:33:25,013 INFO    Thread-31 (_run_job):19288 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-17 22:33:25,013 INFO    Thread-31 (_run_job):19288 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-17 22:33:25,016 INFO    Thread-31 (_run_job):19288 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-17 22:33:25,616 INFO    Thread-31 (_run_job):19288 [wandb_run.py:_finish():2112] finishing run prahaladvathsan-iit-madras/DA640_A01/ml9142ar
+2025-03-17 22:33:25,617 INFO    Thread-31 (_run_job):19288 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-03-17 22:33:25,617 INFO    Thread-31 (_run_job):19288 [wandb_run.py:_restore():2322] restore
+2025-03-17 22:33:25,618 INFO    Thread-31 (_run_job):19288 [wandb_run.py:_restore():2328] restore done
+2025-03-17 22:33:50,846 INFO    Thread-31 (_run_job):19288 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-17 22:33:50,846 INFO    Thread-31 (_run_job):19288 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-17 22:33:50,847 INFO    Thread-31 (_run_job):19288 [wandb_run.py:_footer_sync_info():3917] logging synced files
+2025-03-17 22:33:50,851 ERROR   MainThread:19288 [pyagent.py:_run_jobs_from_queue():234] Run ml9142ar errored:
+Traceback (most recent call last):
+  File "c:\Users\praha\miniconda3\envs\DS\lib\site-packages\wandb\agents\pyagent.py", line 306, in _run_job
+    self._function()
+  File "C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\Sweep.py", line 79, in train_model_for_sweep
+    model.update_weights(dw, db, optimizer)
+  File "C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\Neural_Network.py", line 278, in update_weights
+    self.weights[i] = optimizer.update(self.weights[i], dw[i])
+  File "C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\Neural_Network.py", line 148, in update
+    self.m = self.beta1 * self.m + (1 - self.beta1) * gradients
+ValueError: operands could not be broadcast together with shapes (784,32) (32,32) 
+
+2025-03-17 22:33:55,866 INFO    MsgRouterThr:19288 [mailbox.py:close():129] Closing mailbox, abandoning 1 handles.
+2025-03-17 22:34:02,569 INFO    Thread-37 (_run_job):19288 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-03-17 22:34:02,569 INFO    Thread-37 (_run_job):19288 [wandb_setup.py:_flush():67] Configure stats pid to 19288
+2025-03-17 22:34:02,569 INFO    Thread-37 (_run_job):19288 [wandb_setup.py:_flush():67] Loading settings from C:\Users\praha\.config\wandb\settings
+2025-03-17 22:34:02,569 INFO    Thread-37 (_run_job):19288 [wandb_setup.py:_flush():67] Loading settings from C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\wandb\settings
+2025-03-17 22:34:02,569 INFO    Thread-37 (_run_job):19288 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-17 22:34:02,570 INFO    Thread-37 (_run_job):19288 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\wandb\run-20250317_223402-joy6kd3o\logs\debug.log
+2025-03-17 22:34:02,571 INFO    Thread-37 (_run_job):19288 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\wandb\run-20250317_223402-joy6kd3o\logs\debug-internal.log
+2025-03-17 22:34:02,572 INFO    Thread-37 (_run_job):19288 [wandb_init.py:init():761] calling init triggers
+2025-03-17 22:34:02,572 INFO    Thread-37 (_run_job):19288 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activation': 'tanh', 'batch_size': 16, 'beta': 0.9, 'beta1': 0.9, 'beta2': 0.999, 'epochs': 5, 'epsilon': 1e-08, 'hidden_size': 64, 'learning_rate': 0.0001, 'loss': 'cross_entropy', 'momentum': 0.9, 'num_layers': 3, 'optimizer': 'adam', 'weight_decay': 0, 'weight_init': 'Xavier'}
+config: {'_wandb': {}}
+2025-03-17 22:34:02,572 INFO    Thread-37 (_run_job):19288 [wandb_init.py:init():784] starting backend
+2025-03-17 22:34:02,572 INFO    Thread-37 (_run_job):19288 [wandb_init.py:init():788] sending inform_init request
+2025-03-17 22:34:02,581 INFO    Thread-37 (_run_job):19288 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-03-17 22:34:02,581 INFO    Thread-37 (_run_job):19288 [wandb_init.py:init():798] backend started and connected
+2025-03-17 22:34:02,583 INFO    Thread-37 (_run_job):19288 [wandb_run.py:_config_callback():1261] config_cb None None {'activation': 'tanh', 'batch_size': 16, 'beta': 0.9, 'beta1': 0.9, 'beta2': 0.999, 'epochs': 5, 'epsilon': 1e-08, 'hidden_size': 64, 'learning_rate': 0.0001, 'loss': 'cross_entropy', 'momentum': 0.9, 'num_layers': 3, 'optimizer': 'adam', 'weight_decay': 0, 'weight_init': 'Xavier'}
+2025-03-17 22:34:02,584 INFO    Thread-37 (_run_job):19288 [wandb_init.py:init():891] updated telemetry
+2025-03-17 22:34:02,644 INFO    Thread-37 (_run_job):19288 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-17 22:34:26,581 INFO    Thread-37 (_run_job):19288 [wandb_init.py:init():990] starting run threads in backend
+2025-03-17 22:34:27,253 INFO    Thread-37 (_run_job):19288 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-17 22:34:27,254 INFO    Thread-37 (_run_job):19288 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-17 22:34:27,254 INFO    Thread-37 (_run_job):19288 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-17 22:34:27,256 INFO    Thread-37 (_run_job):19288 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-17 22:34:27,258 INFO    Thread-37 (_run_job):19288 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-17 22:34:27,715 INFO    Thread-37 (_run_job):19288 [wandb_run.py:_finish():2112] finishing run prahaladvathsan-iit-madras/DA640_A01/joy6kd3o
+2025-03-17 22:34:27,716 INFO    Thread-37 (_run_job):19288 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-03-17 22:34:27,716 INFO    Thread-37 (_run_job):19288 [wandb_run.py:_restore():2322] restore
+2025-03-17 22:34:27,716 INFO    Thread-37 (_run_job):19288 [wandb_run.py:_restore():2328] restore done

@@ -1,0 +1,9 @@
+Starting training...
+Epoch 1/1:   0%|                                                                                                        | 0/13500 [00:00<?, ?it/s]C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\Neural_Network.py:21: RuntimeWarning: overflow encountered in exp
+  return 1 / (1 + np.exp(-x))
+C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\Neural_Network.py:19: RuntimeWarning: overflow encountered in exp
+  s = 1 / (1 + np.exp(-x))
+Epoch 1/1: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 13500/13500 [00:04<00:00, 3185.75it/s]
+Epoch 1/1 - Loss: 61.9852 - Train Acc: 0.1000 - Val Acc: 0.1003 - Test Acc: 0.1000
+Training completed!
+Final Test Accuracy: 0.1000

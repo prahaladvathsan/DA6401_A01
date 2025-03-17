@@ -1,0 +1,60 @@
+_wandb:
+    value:
+        cli_version: 0.19.8
+        m: []
+        python_version: 3.10.14
+        t:
+            "1":
+                - 2
+                - 3
+                - 55
+            "2":
+                - 2
+                - 3
+                - 55
+            "3":
+                - 2
+                - 14
+                - 17
+                - 23
+                - 55
+                - 62
+            "4": 3.10.14
+            "5": 0.19.8
+            "8":
+                - 3
+                - 5
+            "10":
+                - 3
+            "12": 0.19.8
+            "13": windows-amd64
+activation:
+    value: ReLU
+batch_size:
+    value: 64
+beta:
+    value: 0.9
+beta1:
+    value: 0.9
+beta2:
+    value: 0.999
+epochs:
+    value: 10
+epsilon:
+    value: 1e-08
+hidden_size:
+    value: 64
+learning_rate:
+    value: 0.0001
+loss:
+    value: cross_entropy
+momentum:
+    value: 0.9
+num_layers:
+    value: 4
+optimizer:
+    value: adam
+weight_decay:
+    value: 0.0005
+weight_init:
+    value: random

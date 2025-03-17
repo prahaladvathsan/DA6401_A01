@@ -1,0 +1,17 @@
+{"time":"2025-03-17T22:24:57.0911398+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\praha\\Documents\\IIT madras\\Acads\\sem 10\\introtoDL\\DA6401_A01\\wandb\\run-20250317_222457-vdxu2z5s\\logs\\debug-core.log"}
+{"time":"2025-03-17T22:24:57.2075345+05:30","level":"INFO","msg":"created new stream","id":"vdxu2z5s"}
+{"time":"2025-03-17T22:24:57.20767+05:30","level":"INFO","msg":"stream: started","id":"vdxu2z5s"}
+{"time":"2025-03-17T22:24:57.20767+05:30","level":"INFO","msg":"handler: started","stream_id":"vdxu2z5s"}
+{"time":"2025-03-17T22:24:57.2078108+05:30","level":"INFO","msg":"sender: started","stream_id":"vdxu2z5s"}
+{"time":"2025-03-17T22:24:57.2078932+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"vdxu2z5s"}
+{"time":"2025-03-17T22:24:57.5948741+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T22:24:58.7770563+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T22:24:58.7770563+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T22:24:59.7818516+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading data","runtime_seconds":1.4210715},{"desc":"uploading output.log","runtime_seconds":0.5540162,"progress":"419B/419B"},{"desc":"uploading config.yaml","runtime_seconds":0.256292,"progress":"925B/925B"}],"total_operations":3}}
+{"time":"2025-03-17T22:24:59.9363802+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T22:25:19.414014+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/prahaladvathsan-iit-madras/DA640_A01/vdxu2z5s/file_stream\": dial tcp 35.186.228.49:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-17T22:25:22.4628735+05:30","level":"INFO","msg":"stream: closing","id":"vdxu2z5s"}
+{"time":"2025-03-17T22:25:22.4628735+05:30","level":"INFO","msg":"handler: closed","stream_id":"vdxu2z5s"}
+{"time":"2025-03-17T22:25:22.4628735+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"vdxu2z5s"}
+{"time":"2025-03-17T22:25:22.4628735+05:30","level":"INFO","msg":"sender: closed","stream_id":"vdxu2z5s"}
+{"time":"2025-03-17T22:25:22.4628735+05:30","level":"INFO","msg":"stream: closed","id":"vdxu2z5s"}

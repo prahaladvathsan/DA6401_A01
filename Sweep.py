@@ -5,9 +5,10 @@ from keras.datasets import fashion_mnist
 from tqdm import tqdm
 import os
 import sys
+from types import SimpleNamespace
 
 # Import the neural network implementation from the main file
-from Neural Network import FeedForwardNN, get_optimizer, get_loss_function, preprocess_data, get_batches
+from Neural_Network import FeedForwardNN, get_optimizer, get_loss_function, preprocess_data, get_batches
 
 def train_model_for_sweep():
     """Training function used by wandb sweep agent"""
@@ -42,24 +43,19 @@ def train_model_for_sweep():
         loss_func = get_loss_function(config.loss)
         
         # Initialize optimizer with config parameters
-        optimizer_params = {
-            'learning_rate': config.learning_rate,
-            'weight_decay': config.weight_decay
-        }
+        # Convert config dictionary to an object with attributes
+        opt_args = SimpleNamespace(
+            optimizer=config.optimizer,
+            learning_rate=config.learning_rate,
+            weight_decay=config.weight_decay,
+            momentum=config.momentum if hasattr(config, 'momentum') else 0.9,
+            beta=config.beta if hasattr(config, 'beta') else 0.9,
+            beta1=config.beta1 if hasattr(config, 'beta1') else 0.9,
+            beta2=config.beta2 if hasattr(config, 'beta2') else 0.999,
+            epsilon=config.epsilon if hasattr(config, 'epsilon') else 1e-8
+        )
         
-        if config.optimizer in ['momentum', 'nag']:
-            optimizer_params['momentum'] = config.momentum
-        elif config.optimizer == 'rmsprop':
-            optimizer_params['beta'] = config.beta
-        elif config.optimizer in ['adam', 'nadam']:
-            optimizer_params['beta1'] = config.beta1
-            optimizer_params['beta2'] = config.beta2
-            optimizer_params['epsilon'] = config.epsilon
-        
-        optimizer = get_optimizer({
-            'optimizer': config.optimizer,
-            **optimizer_params
-        })
+        optimizer = get_optimizer(opt_args)
         
         # Training loop
         for epoch in range(config.epochs):
@@ -159,10 +155,10 @@ sweep_config = {
 
 def main():
     parser = argparse.ArgumentParser(description="Run WandB hyperparameter sweep")
-    parser.add_argument('--wandb_project', type=str, default='nn_hyperparameter_sweep',
-                       help='WandB project name')
-    parser.add_argument('--wandb_entity', type=str, default='your_username',
-                       help='WandB entity name')
+    parser.add_argument('-wp', '--wandb_project', type=str, default='DA640_A01',
+                        help='Project name used to track experiments in Weights & Biases dashboard')
+    parser.add_argument('-we', '--wandb_entity', type=str, default='prahaladvathsan-iit-madras',
+                        help='Wandb Entity used to track experiments in the Weights & Biases dashboard')
     parser.add_argument('--sweep_count', type=int, default=100,
                        help='Number of runs to execute in the sweep')
     args = parser.parse_args()

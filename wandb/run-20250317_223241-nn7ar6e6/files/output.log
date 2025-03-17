@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\Sweep.py", line 79, in train_model_for_sweep
+    model.update_weights(dw, db, optimizer)
+  File "C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\Neural_Network.py", line 278, in update_weights
+    self.weights[i] = optimizer.update(self.weights[i], dw[i])
+  File "C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\Neural_Network.py", line 90, in update
+    self.velocity = self.momentum * self.velocity - self.learning_rate * gradients
+ValueError: operands could not be broadcast together with shapes (784,128) (128,128)

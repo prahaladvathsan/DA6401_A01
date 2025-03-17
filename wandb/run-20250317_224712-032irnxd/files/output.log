@@ -1,0 +1,4 @@
+C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\Neural_Network.py:21: RuntimeWarning: overflow encountered in exp
+  return 1 / (1 + np.exp(-x))
+C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\Neural_Network.py:19: RuntimeWarning: overflow encountered in exp
+  s = 1 / (1 + np.exp(-x))

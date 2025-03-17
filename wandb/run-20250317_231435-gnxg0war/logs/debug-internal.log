@@ -1,0 +1,6 @@
+{"time":"2025-03-17T23:14:35.9420957+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\praha\\Documents\\IIT madras\\Acads\\sem 10\\introtoDL\\DA6401_A01\\wandb\\run-20250317_231435-gnxg0war\\logs\\debug-core.log"}
+{"time":"2025-03-17T23:14:36.0655813+05:30","level":"INFO","msg":"created new stream","id":"gnxg0war"}
+{"time":"2025-03-17T23:14:36.0655813+05:30","level":"INFO","msg":"stream: started","id":"gnxg0war"}
+{"time":"2025-03-17T23:14:36.0655813+05:30","level":"INFO","msg":"handler: started","stream_id":"gnxg0war"}
+{"time":"2025-03-17T23:14:36.0655813+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"gnxg0war"}
+{"time":"2025-03-17T23:14:36.0655813+05:30","level":"INFO","msg":"sender: started","stream_id":"gnxg0war"}

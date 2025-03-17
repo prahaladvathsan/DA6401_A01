@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\Sweep.py", line 59, in train_model_for_sweep
+    optimizer = get_optimizer({
+  File "C:\Users\praha\Documents\IIT madras\Acads\sem 10\introtoDL\DA6401_A01\Neural_Network.py", line 321, in get_optimizer
+    'learning_rate': args.learning_rate,
+AttributeError: 'dict' object has no attribute 'learning_rate'

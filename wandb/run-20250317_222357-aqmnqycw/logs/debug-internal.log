@@ -1,0 +1,18 @@
+{"time":"2025-03-17T22:23:58.0163508+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\praha\\Documents\\IIT madras\\Acads\\sem 10\\introtoDL\\DA6401_A01\\wandb\\run-20250317_222357-aqmnqycw\\logs\\debug-core.log"}
+{"time":"2025-03-17T22:23:58.1357883+05:30","level":"INFO","msg":"created new stream","id":"aqmnqycw"}
+{"time":"2025-03-17T22:23:58.1357883+05:30","level":"INFO","msg":"stream: started","id":"aqmnqycw"}
+{"time":"2025-03-17T22:23:58.1357883+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"aqmnqycw"}
+{"time":"2025-03-17T22:23:58.1357883+05:30","level":"INFO","msg":"handler: started","stream_id":"aqmnqycw"}
+{"time":"2025-03-17T22:23:58.1357883+05:30","level":"INFO","msg":"sender: started","stream_id":"aqmnqycw"}
+{"time":"2025-03-17T22:23:58.5393823+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T22:23:59.6695227+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T22:23:59.6700269+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T22:24:00.7098161+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading data","runtime_seconds":1.4287860000000001},{"desc":"uploading config.yaml","runtime_seconds":0.1802488,"progress":"918B/918B"}],"total_operations":2}}
+{"time":"2025-03-17T22:24:00.8925782+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T22:24:20.3327937+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/prahaladvathsan-iit-madras/DA640_A01/aqmnqycw/file_stream\": dial tcp 35.186.228.49:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-17T22:24:43.7103178+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/prahaladvathsan-iit-madras/DA640_A01/aqmnqycw/file_stream\": dial tcp 35.186.228.49:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-17T22:24:46.554432+05:30","level":"INFO","msg":"stream: closing","id":"aqmnqycw"}
+{"time":"2025-03-17T22:24:46.554432+05:30","level":"INFO","msg":"handler: closed","stream_id":"aqmnqycw"}
+{"time":"2025-03-17T22:24:46.554432+05:30","level":"INFO","msg":"sender: closed","stream_id":"aqmnqycw"}
+{"time":"2025-03-17T22:24:46.554432+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"aqmnqycw"}
+{"time":"2025-03-17T22:24:46.554432+05:30","level":"INFO","msg":"stream: closed","id":"aqmnqycw"}

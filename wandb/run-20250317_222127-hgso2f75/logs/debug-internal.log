@@ -1,0 +1,17 @@
+{"time":"2025-03-17T22:21:27.2749192+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\praha\\Documents\\IIT madras\\Acads\\sem 10\\introtoDL\\DA6401_A01\\wandb\\run-20250317_222127-hgso2f75\\logs\\debug-core.log"}
+{"time":"2025-03-17T22:21:27.3961702+05:30","level":"INFO","msg":"created new stream","id":"hgso2f75"}
+{"time":"2025-03-17T22:21:27.3967681+05:30","level":"INFO","msg":"stream: started","id":"hgso2f75"}
+{"time":"2025-03-17T22:21:27.3967681+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"hgso2f75"}
+{"time":"2025-03-17T22:21:27.3967681+05:30","level":"INFO","msg":"sender: started","stream_id":"hgso2f75"}
+{"time":"2025-03-17T22:21:27.3967681+05:30","level":"INFO","msg":"handler: started","stream_id":"hgso2f75"}
+{"time":"2025-03-17T22:21:28.0467791+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T22:21:33.8125799+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T22:21:33.813367+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T22:21:34.8358163+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.363329,"progress":"1013B/1013B"}],"total_operations":1}}
+{"time":"2025-03-17T22:21:34.899316+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T22:21:55.9464626+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/prahaladvathsan-iit-madras/DA640_A01/hgso2f75/file_stream\": dial tcp 35.186.228.49:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-17T22:21:58.5034651+05:30","level":"INFO","msg":"stream: closing","id":"hgso2f75"}
+{"time":"2025-03-17T22:21:58.5034651+05:30","level":"INFO","msg":"handler: closed","stream_id":"hgso2f75"}
+{"time":"2025-03-17T22:21:58.5036222+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"hgso2f75"}
+{"time":"2025-03-17T22:21:58.5037116+05:30","level":"INFO","msg":"sender: closed","stream_id":"hgso2f75"}
+{"time":"2025-03-17T22:21:58.5045122+05:30","level":"INFO","msg":"stream: closed","id":"hgso2f75"}

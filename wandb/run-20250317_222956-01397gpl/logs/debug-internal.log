@@ -1,0 +1,18 @@
+{"time":"2025-03-17T22:29:56.2908754+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\praha\\Documents\\IIT madras\\Acads\\sem 10\\introtoDL\\DA6401_A01\\wandb\\run-20250317_222956-01397gpl\\logs\\debug-core.log"}
+{"time":"2025-03-17T22:29:56.4099372+05:30","level":"INFO","msg":"created new stream","id":"01397gpl"}
+{"time":"2025-03-17T22:29:56.4099372+05:30","level":"INFO","msg":"stream: started","id":"01397gpl"}
+{"time":"2025-03-17T22:29:56.4099372+05:30","level":"INFO","msg":"sender: started","stream_id":"01397gpl"}
+{"time":"2025-03-17T22:29:56.4099372+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"01397gpl"}
+{"time":"2025-03-17T22:29:56.4104527+05:30","level":"INFO","msg":"handler: started","stream_id":"01397gpl"}
+{"time":"2025-03-17T22:29:56.8025082+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T22:30:21.3700731+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T22:30:21.3705805+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T22:30:22.3933996+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 0-1, summary","runtime_seconds":9.8177654},{"desc":"uploading output.log","runtime_seconds":0.3082352,"progress":"147B/147B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.3082352,"progress":"298B/298B"},{"desc":"uploading config.yaml","runtime_seconds":0.0251379,"progress":"996B/996B"}],"total_operations":4}}
+{"time":"2025-03-17T22:30:22.7366392+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T22:30:33.6013802+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/prahaladvathsan-iit-madras/DA640_A01/01397gpl/file_stream\": dial tcp 35.186.228.49:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-17T22:30:57.4626311+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/prahaladvathsan-iit-madras/DA640_A01/01397gpl/file_stream\": dial tcp 35.186.228.49:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-17T22:31:00.053431+05:30","level":"INFO","msg":"stream: closing","id":"01397gpl"}
+{"time":"2025-03-17T22:31:00.053431+05:30","level":"INFO","msg":"handler: closed","stream_id":"01397gpl"}
+{"time":"2025-03-17T22:31:00.053431+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"01397gpl"}
+{"time":"2025-03-17T22:31:00.053431+05:30","level":"INFO","msg":"sender: closed","stream_id":"01397gpl"}
+{"time":"2025-03-17T22:31:00.0539365+05:30","level":"INFO","msg":"stream: closed","id":"01397gpl"}
