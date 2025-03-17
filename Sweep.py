@@ -7,8 +7,7 @@ import os
 import sys
 
 # Import the neural network implementation from the main file
-# Assuming all classes and functions are defined in train.py
-from train import FeedForwardNN, get_optimizer, get_loss_function, preprocess_data, get_batches
+from Neural Network import FeedForwardNN, get_optimizer, get_loss_function, preprocess_data, get_batches
 
 def train_model_for_sweep():
     """Training function used by wandb sweep agent"""
